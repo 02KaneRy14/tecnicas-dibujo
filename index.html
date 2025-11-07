@@ -1,0 +1,181 @@
+<html lang="es"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Técnicas de Dibujo y Pintura</title>
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f5f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(rgba(10, 10, 40, 0.6), rgba(10, 10, 40, 0.6)),
+              url("./IMG/noche.webp") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px; /* más grande */
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+header p {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.artista {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 15px;
+  width: 260px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+.artista:hover {
+  transform: scale(1.03);
+}
+.artista img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+}
+.artista h2 {
+  color: #d94e75;
+}
+#contacto {
+  background-color: #3085be;
+  text-align: center;
+  padding: 30px;
+}
+#contacto h2 {
+  color: #d690ac;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+button {
+  background-color: #d94e75;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #b63a5a;
+}
+footer {
+  background-color: #56a6db;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Técnicas de Dibujo y Pintura</h1>
+    <p>Explorando diferentes formas de crear arte</p>
+</header>
+
+<section>
+
+    <div class="artista">
+    <h2>Acuarela</h2>
+    <img src="./IMG/acuarela.webp" alt="Acuarela">
+    <p><strong>Tipo:</strong> Pintura con agua y pigmentos</p>
+    <p>La acuarela se caracteriza por su transparencia y la suavidad de los tonos. Se aplica en capas ligeras sobre papel especial.</p>
+    </div>
+
+    <div class="artista">
+    <h2>Óleo</h2>
+    <img src="./IMG/Oleo.jpg" alt="Óleo">
+    <p><strong>Tipo:</strong> Pintura con aceites y pigmentos</p>
+    <p>El óleo permite colores intensos y mezclas suaves. Es ideal para retratos y paisajes detallados por su textura rica.</p>
+    </div>
+
+    <div class="artista">
+    <h2>Acrílico</h2>
+    <img src="./IMG/acrilico.jpg" alt="Acrílico">
+    <p><strong>Tipo:</strong> Pintura de secado rápido</p>
+    <p>El acrílico combina la intensidad del óleo con la rapidez de la acuarela. Se seca en minutos y permite crear efectos modernos.</p>
+    </div>
+
+    <div class="artista">
+    <h2>Carboncillo</h2>
+    <img src="./IMG/Carboncillo.JPG" alt="Carboncillo">
+    <p><strong>Tipo:</strong> Dibujo en blanco y negro</p>
+    <p>El carboncillo es una técnica tradicional usada para bocetos y retratos. Permite trazos suaves y sombreados profundos.</p>
+    </div>
+
+    <div class="artista">
+    <h2>Tinta china</h2>
+    <img src="./IMG/Tinta china.jpg" alt="Tinta china">
+    <p><strong>Tipo:</strong> Dibujo con tinta líquida</p>
+    <p>Se utiliza con pincel o pluma. Es común en el arte oriental y los cómics por su precisión y contraste fuerte.</p>
+    </div>
+
+    <div class="artista">
+    <h2>Pastel</h2>
+    <img src="./IMG/pastel.jpg" alt="Pastel">
+    <p><strong>Tipo:</strong> Dibujo con barras de pigmento</p>
+    <p>El pastel ofrece colores vibrantes y una textura aterciopelada. Se usa en retratos y paisajes con efectos suaves.</p>
+    </div>
+
+    <div class="artista">
+    <h2>Lápiz de grafito</h2>
+    <img src="./IMG/lapiz.jpg" alt="Lápiz de grafito">
+    <p><strong>Tipo:</strong> Dibujo a lápiz</p>
+    <p>Es la técnica más básica y versátil. Se usa para bocetos, ilustraciones y estudios de luz y sombra.</p>
+    </div>
+
+    <div class="artista">
+    <h2>Digital</h2>
+    <img src="./IMG/Digital.png" alt="Arte digital">
+    <p><strong>Tipo:</strong> Dibujo con herramientas digitales</p>
+    <p>El arte digital combina creatividad y tecnología. Se realiza con tabletas gráficas y programas de diseño.</p>
+    </div>
+
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <form>
+    <input type="text" placeholder="Nombre" required=""> 
+    <input type="email" placeholder="Email" required="">
+    <textarea placeholder="Mensaje" required=""></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Técnicas de Dibujo y Pintura</p>
+  <p>Por Yohana Patricia</p>
+</footer>
+
+</body></html>
